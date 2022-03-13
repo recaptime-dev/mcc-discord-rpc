@@ -1,0 +1,25 @@
+{
+  "name": "@recaptime/mcc-discord-rpc",
+  "packageManager": "yarn@3.2.0",
+  "repository": {
+    "url": "https://gitlab.com/RecapTime/mcc-discord-rpc",
+    "type": "git"
+  },
+  "maintainers": [
+    {
+      "name": "Andrei Jiroh Halili",
+      "email": "ajhalili2006@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@yarnpkg/sdks": "^2.6.0",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
