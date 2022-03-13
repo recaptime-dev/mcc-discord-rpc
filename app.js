@@ -20,9 +20,6 @@ app.get("/changeTeams/:teamSlug", (res, req) => {
     }
 })
 
-app.listen(port, () => {
-    console.log("info: REST API is up at http://localhost:"+port+", see the docs for details on how to use it.")
-})
 
 client.on('ready', async () => {
     client.request("SET_ACTIVITY", { pid: process.pid, activity: defaultActivity });
@@ -31,6 +28,9 @@ client.on('ready', async () => {
 client.on('connected', async () => {
     console.log("info: Connected to Discord RPC");
 });
+app.listen(port, () => {
+    console.log("info: REST API is up at http://localhost:"+port+", see the docs for details on how to use it.")
+})
 
 
 // Uses the unofficial MCC.Live OAuth client ID from Andrei Jiroh.
